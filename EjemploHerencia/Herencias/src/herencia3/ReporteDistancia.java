@@ -38,16 +38,24 @@ public class ReporteDistancia extends Reporte{
     }
     
     @Override
-    public String toString(){
-        
-        
-        String cadena = String.format("%s\nCarrera: %s \n"
+    public String toString(){               
+                    
+        String cadena = String.format("Reporte Distancia\n"
+                + "Carrera: %s\n"
                 + "Ciclo: %s\n\n"
-                + "El total de matriculas es: %.2f\n", 
-                nombre,
+                + "Lista de estudiantes\n\n",          
                 carrera,
-                ciclo,
-                obtenerTotalMatriculasDistancia());
+                ciclo);
+          
+        for (int i = 0; i < lista.size() ; i++) {
+            
+            cadena = String.format("%s%s\n", cadena, lista.get(i));
+            
+        }
+        
+        cadena = String.format("%s\nEl total de matriculas es: %.2f",
+                cadena, obtenerTotalMatriculasDistancia());
+        
         return cadena;
     }
     

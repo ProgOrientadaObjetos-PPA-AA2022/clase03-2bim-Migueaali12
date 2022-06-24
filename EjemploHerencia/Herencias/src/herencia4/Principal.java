@@ -29,18 +29,24 @@ public class Principal {
         listaDocentes.add(doc2);
         
         ArrayList<Estudiante> listaEstudiantes = new ArrayList<>();
-        // agregar elementos
-        
+        listaEstudiantes.add(est1);
+        listaEstudiantes.add(est2);
         
         ArrayList<Policia> listaPolicias = new ArrayList<>();
-        // agregar elementos
-        
+        listaPolicias.add(pol1);
+        listaPolicias.add(pol2);
         
         ReporteDocente rd = new ReporteDocente("0001Doc");
+        rd.setLista(listaDocentes);
+        rd.setPromedioSueldos();
         
         ReporteEstudiante re = new ReporteEstudiante("0001Est");
+        re.setLista(listaEstudiantes);
+        re.setPromedioMatriculas();
         
         ReportePolicia rp = new ReportePolicia("0001Pol");
+        rp.setLista(listaPolicias);
+        rp.setPromedioEdades();
         
         System.out.println(rd);
         System.out.println(re);

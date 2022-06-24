@@ -3,7 +3,6 @@ package paquete05;
 
 import java.util.ArrayList;
 import java.util.Scanner;
-import paquete04.Estudiante;
 
 public class EjecutaEstudiante {
 
@@ -12,9 +11,7 @@ public class EjecutaEstudiante {
         /*
         Generar un proceso que permita ingresar n número 
         de docentes. 
-        El usuario decide de manera prevía cuantos objetos
-        de tipo EstudiantePresencial y EstudianteDistancia
-        quiere ingresar.
+        
         
         */
         Scanner entrada = new Scanner(System.in);
