@@ -141,17 +141,14 @@ public class EjecutaEstudiante {
             }
 
             entrada.nextLine();
-            // Se pregunta si se desea ingresar más estudiante
+            
             System.out.println("Desea ingresar más estudiante. Digite la "
                     + "letra S para continuar o digite la letra N para salir "
                     + "del proceso");
 
-            // se captura el valor ingresado por el usuario para la variable 
-            // continuar
+            
             continuar = entrada.nextLine();
-            // se pregunta si el valor continuar es igual al valor "S", se sigue en 
-            // ciclo repetitivo; si el valor es distinto de "S", se sale del ciclo
-            // repetitivo
+            
         } while (continuar.equals("S"));
 
     }
